@@ -4,5 +4,37 @@
     <string name="app_name">Hello World</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="hello_worldTest">Test</string>
+    <string name="Sample1">Sample1</string>
+    <string name="All_Clear">オールクリア</string>
+    <string name="Manual_Input">手入力</string>
+    <string name="Representative">担当者</string>
+    <string name="Enter">決定</string>
+    <string name="title_activity_edit_store_item">EditStoreItem</string>
+    <string name="Price_without_Tax">税抜き価格</string>
+    <string name="Price_with_Tax">税込み価格</string>
+    <string name="TaxFreePrice">免税価格</string>
+    <string name="Price_without_Tax_Short">税抜き</string>
+    <string name="Price_with_Tax_Short">税込み</string>
+    <string name="TaxFreePrice_Short">免税</string>
+    <string name="Price">価格</string>
+    <string name="Currency_Unit">円</string>
+    <string name="Tax">税</string>
+    <string name="Item_Name">商品名</string>
+    <string name="Cancel">キャンセル</string>
+    <string name="Final_Answer">確定</string>
+    <string name="Item_Code">商品コード</string>
+    <string name="Sample">サンプル</string>
+    <string name="No_Item">商品が存在しません</string>
+    <string name="Tax_Calculation">税計算</string>
+    <string name="TaxInclusiveFraction">内税端数</string>
+    <string name="TaxExclusiveFraction">外税端数</string>
+    <string name="round_up">切り上げ</string>
+    <string name="omit">切り捨て</string>
+    <string name="round_off">四捨五入</string>
+    <string name="rate_of_tax">税率</string>
+    <string name="Option_of_Tax_and_Fraction">税率/端数設定</string>
+    <string name="Registration_and_Modification">商品登録/変更</string>
+    <string name="title_activity_setting_tax_and_fraction">SettingTaxAndFraction</string>
 
 </resources>

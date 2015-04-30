@@ -16,6 +16,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".EditStoreItem"
+            android:label="Hello World" />
+        <activity
+            android:name=".SettingTaxAndFraction"
+            android:label="@string/title_activity_setting_tax_and_fraction" >
+        </activity>
     </application>
 
 </manifest>

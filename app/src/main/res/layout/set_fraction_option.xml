@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/Option_of_Tax_and_Fraction"
+        android:id="@+id/textView13"
+        android:background="@color/orange"
+        android:autoText="false"
+        android:editable="false"
+        android:gravity="center" />
+
+    <GridLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:columnCount="6"
+        android:rowCount="14">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="1)"
+            android:id="@+id/textView5"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_columnSpan="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/rate_of_tax"
+            android:id="@+id/textView2"
+            android:layout_column="1"
+            android:layout_row="0"
+            android:layout_columnSpan="2" />
+
+        <EditText
+            android:layout_width="101dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:id="@+id/editText"
+            android:text="8.0"
+            android:selectAllOnFocus="true"
+            android:gravity="right"
+            android:layout_column="3"
+            android:layout_row="0"
+            android:layout_columnSpan="2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="%"
+            android:id="@+id/textView3"
+            android:layout_column="5"
+            android:layout_row="0"
+            android:layout_columnSpan="1"
+            android:layout_rowSpan="1" />
+
+        <TextView
+            android:layout_width="362dp"
+            android:layout_height="3dp"
+            android:text="直線"
+            android:id="@+id/textView8"
+            android:background="#ff000000"
+            android:textColor="#ff000000"
+            android:clickable="false"
+            android:layout_gravity="center_horizontal"
+            android:layout_column="0"
+            android:layout_row="1"
+            android:layout_columnSpan="6" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="2)"
+            android:id="@+id/textView6"
+            android:layout_row="2"
+            android:layout_column="0" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/TaxInclusiveFraction"
+            android:id="@+id/textView"
+            android:layout_column="1"
+            android:layout_row="2"
+            android:layout_columnSpan="2" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_rowSpan="3"
+            android:layout_column="3"
+            android:layout_columnSpan="3"
+            android:layout_row="2"
+            android:focusableInTouchMode="false"
+            android:id="@+id/InclusiveTax_RadioGroup"
+            android:measureWithLargestChild="false">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/omit"
+                android:id="@+id/CeilInclusiveTax_RadioButton" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/round_up"
+                android:id="@+id/FloorInclusiveTax_RadioButton" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/round_off"
+                android:id="@+id/RoundInclusiveTax_RadioButton" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="362dp"
+            android:layout_height="3dp"
+            android:text="直線"
+            android:id="@+id/textView9"
+            android:background="#ff000000"
+            android:textColor="#ff000000"
+            android:clickable="false"
+            android:layout_gravity="center_horizontal"
+            android:layout_column="0"
+            android:layout_row="5"
+            android:layout_columnSpan="6" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="3)"
+            android:id="@+id/textView7"
+            android:layout_row="6"
+            android:layout_column="0" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/TaxExclusiveFraction"
+            android:id="@+id/textView4"
+            android:layout_row="6"
+            android:layout_column="1"
+            android:layout_columnSpan="2" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="3"
+            android:layout_row="6"
+            android:layout_rowSpan="3"
+            android:layout_columnSpan="3"
+            android:id="@+id/ExclusiveTax_RadioGroup">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/omit"
+                android:id="@+id/CeilExclusiveTax_RadioButton" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/round_up"
+                android:id="@+id/FloorExclusiveTax_RadioButton" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/round_off"
+                android:id="@+id/RoundExclusiveTax_RadioButton" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="362dp"
+            android:layout_height="3dp"
+            android:text="直線"
+            android:id="@+id/textView10"
+            android:background="#ff000000"
+            android:textColor="#ff000000"
+            android:clickable="false"
+            android:layout_gravity="center_horizontal"
+            android:layout_column="0"
+            android:layout_row="10"
+            android:layout_columnSpan="6" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Cancel"
+            android:id="@+id/button"
+            android:layout_row="11"
+            android:layout_column="0"
+            android:layout_columnSpan="2"
+            android:layout_rowSpan="2" />
+
+        <Button
+            android:layout_width="259dp"
+            android:layout_height="wrap_content"
+            android:text="@string/Final_Answer"
+            android:id="@+id/button3"
+            android:layout_column="4"
+            android:layout_columnSpan="2"
+            android:layout_row="11"
+            android:layout_rowSpan="2" />
+    </GridLayout>
+
+</LinearLayout>
